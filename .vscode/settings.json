@@ -1,3 +1,21 @@
 {
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[css]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": "explicit"
+    }
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  "stylelint.enable": true,
+  "stylelint.validate": ["css", "postcss"],
   "gitlens.ai.generateCommitMessage.customInstructions": "Generate commit messages strictly following the Conventional Commits specification.\n\nFormat: <type>(<scope>): <description>\n\nAllowed types:\n- feat: a new feature\n- fix: a bug fix\n- docs: documentation changes only\n- style: formatting, whitespace, missing semicolons — no logic changes\n- refactor: code change that is neither a fix nor a feature\n- perf: performance improvement\n- test: adding or updating tests\n- chore: build process, tooling, config changes\n- revert: revert a previous commit\n- ci: CI/CD configuration changes\n\nRules:\n- description must be lowercase, imperative mood, no period at the end\n- scope is optional but recommended: use component or file name (e.g. card, header, button, animations)\n- header must not exceed 100 characters\n- no generic messages like 'update files' or 'fix bug'\n- for breaking changes add '!' after type/scope: feat!: change API\n\nExamples:\nfeat(card): add like button animation\nfix(header): correct logo alignment on mobile\nstyle(globals): reorder CSS properties\nchore: update husky and lint-staged config"
 }
