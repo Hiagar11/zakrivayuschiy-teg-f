@@ -22,7 +22,7 @@
 }
 
 .surface {
-  outline: 2px solid var(--border-color);
+  border: 2px solid var(--border-color);
   background-color: var(--bg-color);
 }
 
@@ -51,7 +51,7 @@ svg {
   gap: 20px;
   grid-template-columns: 1fr;
   grid-template-rows: min-content min-content;
-  margin-block: 100px;
+  margin-block: 100px 94px;
   padding-block: clamp(122px, calc(122px + (100vw - 370px) * 8 / 1070), 130px);
   text-transform: uppercase;
   place-items: end center;
@@ -64,12 +64,13 @@ svg {
 .header__title {
   font-size: clamp(14px, calc(14px + (100vw - 375px) * 9 / 1065), 23px);
   place-self: start center;
+  border-block-end: 2px solid var(--border-color);
 }
 
 .container__list {
   list-style-type: none;
   display: grid;
-  gap: 50px;
+  gap: 48px;
   grid-template-columns: 1fr;
 }
 
@@ -83,7 +84,6 @@ svg {
   padding-inline: 10px;
   font-variation-settings: 'wght' 715;
   place-self: stretch;
-  border-block-end: 2px solid var(--border-color);
 }
 
 .card__media {
@@ -91,7 +91,8 @@ svg {
   inline-size: 100%;
   block-size: 100%;
   max-inline-size: 700px;
-  max-block-size: 700px;
+  max-block-size: 698px;
+  border-inline: 2px solid var(--border-color);
 }
 
 .card__media-img {
@@ -110,7 +111,7 @@ svg {
 }
 
 .card__body {
-  padding: 25px 25px 18px;
+  padding: 25px 25px 22px;
   border-block-start: 2px solid var(--border-color);
 }
 
@@ -129,7 +130,7 @@ svg {
 }
 
 .card__like-button {
-  padding-block: 0.6rem;
+  padding-block: 0.7rem;
   padding-inline: 2.25rem;
   inline-size: fit-content;
   block-size: fit-content;
