@@ -92,6 +92,7 @@ svg {
   block-size: 100%;
   max-inline-size: 700px;
   max-block-size: 698px;
+  overflow: hidden;
   border-inline: 2px solid var(--border-color);
 }
 
@@ -141,4 +142,32 @@ svg {
   display: block;
   font-size: 14px;
   line-height: 90%;
+}
+
+.card__media-img_grayscale {
+  filter: grayscale(80%);
+}
+
+.card__media-img_hue-rotate-saturate {
+  filter: hue-rotate(10deg) saturate(260%) contrast(140%);
+}
+
+.card__media-img_hue-rotate {
+  filter: hue-rotate(30deg);
+}
+
+.card__media-img_invert {
+  filter: invert(100%);
+}
+
+.card__media-img_sepia {
+  filter: sepia(100%);
+}
+
+.card__media-img_blur {
+  filter: blur(20px);
+}
+
+.card__media-img_hue-rotate-blur-contrast {
+  filter: hue-rotate(90deg) blur(2px) contrast(50%);
 }
