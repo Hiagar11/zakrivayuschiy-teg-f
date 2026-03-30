@@ -4,7 +4,6 @@
 ✦ like-icon — для svg-иконки анимированного сердца
 ✦ card__like-button — для кнопки Like рядом с иконкой
 ✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
@@ -23,7 +22,7 @@
 }
 
 .surface {
-  border: 2px solid var(--border-color);
+  outline: 2px solid var(--border-color);
   background-color: var(--bg-color);
 }
 
@@ -32,25 +31,113 @@
   inline-size: var(--section-size);
 }
 
+.accent-font {
+  font-family: var(--accent-font), serif;
+  line-height: 1
+}
+
+svg {
+  color: black;
+  fill: currentColor;
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+}
+
 .header {
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr;
   grid-template-rows: min-content min-content;
+  margin-block: 100px;
   padding-block: clamp(122px, calc(122px + (100vw - 370px) * 8 / 1070), 130px);
-  font-family: var(--accent-font), serif;
   text-transform: uppercase;
   place-items: end center;
-  margin-block-start: 100px;
 }
 
 .header__logo {
   font-size: clamp(49px, calc(49px + (100vw - 375px) * 16 / 1065), 65px);
-  line-height: 1
 }
 
 .header__title {
   font-size: clamp(14px, calc(14px + (100vw - 375px) * 9 / 1065), 23px);
-  line-height: 1;
   place-self: start center;
+}
+
+.container__list {
+  list-style-type: none;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 1fr;
+}
+
+.card {
+  display: grid;
+  place-items: start center;
+}
+
+.card__title {
+  padding-block: 4px;
+  padding-inline: 10px;
+  font-variation-settings: 'wght' 715;
+  place-self: stretch;
+  border-block-end: 2px solid var(--border-color);
+}
+
+.card__media {
+  position: relative;
+  inline-size: 100%;
+  block-size: 100%;
+  max-inline-size: 700px;
+  max-block-size: 700px;
+}
+
+.card__media-img {
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.card__media-label {
+  position: absolute;
+  font-size: 14px;
+  text-transform: uppercase;
+  opacity: 0.5;
+  inset-block-start: 25px;
+  inset-inline-end: 25px;
+  -webkit-text-stroke: 1px #fff;
+}
+
+.card__body {
+  padding: 25px 25px 18px 25px;
+  border-block-start: 2px solid var(--border-color);
+}
+
+.card__text {
+  padding-block-end: 25px;
+}
+
+.card__control {
+  place-self: end;
+  display: flex;
+}
+
+.like-icon {
+  inline-size: 38px;
+  block-size: 38px;
+}
+
+.card__like-button {
+  padding-block: 0.6rem;
+  padding-inline: 2.25rem;
+  inline-size: fit-content;
+  block-size: fit-content;
+  border: 2px solid var(--border-color);
+}
+
+.button__text {
+  display: block;
+  font-size: 14px;
+  line-height: 90%;
 }
