@@ -21,3 +21,36 @@
   font-variation-settings: 'wght' var(--weight-main-font);
   background-attachment: fixed;
 }
+
+.surface {
+  border: 2px solid var(--border-color);
+  background-color: var(--bg-color);
+}
+
+.container {
+  margin-inline: auto;
+  inline-size: var(--section-size);
+}
+
+.header {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content min-content;
+  padding-block: clamp(122px, calc(122px + (100vw - 370px) * 8 / 1070), 130px);
+  font-family: var(--accent-font), serif;
+  text-transform: uppercase;
+  place-items: end center;
+  margin-block-start: 100px;
+}
+
+.header__logo {
+  font-size: clamp(49px, calc(49px + (100vw - 375px) * 16 / 1065), 65px);
+  line-height: 1
+}
+
+.header__title {
+  font-size: clamp(14px, calc(14px + (100vw - 375px) * 9 / 1065), 23px);
+  line-height: 1;
+  place-self: start center;
+}

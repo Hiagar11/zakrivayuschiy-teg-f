@@ -6,5 +6,9 @@
     --background-gradient: repeating-linear-gradient(to top, #d3d3d3 0px 2px, transparent 2px 4px),
                              repeating-linear-gradient(to right, #d3d3d3 0px 2px, transparent 2px 4px),
                                  repeating-linear-gradient(to top, #e7e7e7, #1a1a1a);
-
+    --color-white: #fff;
+    --color-black: #000;
+    --border-color: var(--color-black);
+    --bg-color: var(--color-white);
+    --section-size: clamp(375px, calc(375px + (100vw - 375px) * 325 / 1065), 700px);
 }
