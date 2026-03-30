@@ -110,7 +110,7 @@ svg {
 }
 
 .card__body {
-  padding: 25px 25px 18px 25px;
+  padding: 25px 25px 18px;
   border-block-start: 2px solid var(--border-color);
 }
 
