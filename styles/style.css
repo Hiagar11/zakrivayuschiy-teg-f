@@ -37,13 +37,46 @@
 }
 
 svg {
-  color: black;
+  color: var(--accent-color);
   fill: currentColor;
 }
 
 .button {
+  position: relative;
+  overflow: hidden;
   border: none;
   background-color: transparent;
+  color: var(--accent-color);
+  transition: box-shadow 0.3s ease;
+}
+
+.button:not(.card__icon-button)::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-color: var(--accent-color);
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(-100%);
+}
+
+.button__text {
+  position: relative;
+  z-index: 2;
+  display: block;
+  color: var(--button-text-color);
+  font-size: 14px;
+  line-height: 90%;
+  mix-blend-mode: difference;
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.button:hover::before {
+  transform: translateX(0);
 }
 
 .header {
@@ -155,11 +188,7 @@ svg {
   border: 2px solid var(--border-color);
 }
 
-.button__text {
-  display: block;
-  font-size: 14px;
-  line-height: 90%;
-}
+
 
 .card__media-img_grayscale {
   filter: grayscale(80%);
@@ -271,3 +300,4 @@ svg {
     margin-block-end: 8px;
   }
 }
+

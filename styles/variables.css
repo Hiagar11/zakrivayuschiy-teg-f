@@ -12,5 +12,7 @@
     --bg-color: var(--color-white);
     --stroke-color: var(--color-white);
     --backdrop-color: var(--color-black);
+    --accent-color: var(--color-black);
+    --button-text-color: var(--color-white);
     --section-size: clamp(375px, calc(375px + (100vw - 375px) * 325 / 1065), 700px);
 }
