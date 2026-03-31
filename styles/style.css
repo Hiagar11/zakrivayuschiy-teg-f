@@ -111,15 +111,21 @@ svg {
   inset-inline-end: 25px;
   mix-blend-mode: hard-light;
   opacity: 0.5;
-  text-shadow:
-    1px 0 0 #fff,
-    -1px 0 0 #fff,
-    0 1px 0 #fff,
-    0 -1px 0 #fff,
-    1px 1px 0 #fff,
-    -1px -1px 0 #fff,
-    1px -1px 0 #fff,
-    -1px 1px 0 #fff;
+
+}
+
+@supports not (--webkit-text-stroke: 1px (var(--stroke-color))) {
+  .card__media-label {
+      text-shadow:
+    1px 0 0 var(--stroke-color),
+    -1px 0 0 var(--stroke-color),
+    0 1px 0 var(--stroke-color),
+    0 -1px 0 var(--stroke-color),
+    1px 1px 0 var(--stroke-color),
+    -1px -1px 0 var(--stroke-color),
+    1px -1px 0 var(--stroke-color),
+    -1px 1px 0 var(--stroke-color);
+  }
 }
 
 .card__body {
