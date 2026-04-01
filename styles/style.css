@@ -46,6 +46,14 @@ svg {
   block-size: 36px;
 }
 
+.like-icon.main-body {
+  color: transparent;
+}
+
+.like-icon.core {
+  color: transparent;
+  mix-blend-mode: difference;
+}
 
 .button {
   position: relative;
@@ -110,6 +118,10 @@ svg {
   padding-block: clamp(122px, calc(122px + (100vw - 370px) * 8 / 1070), 130px);
   text-transform: uppercase;
   place-items: end center;
+}
+
+.header__link {
+  text-decoration: none;
 }
 
 .header__logo {
