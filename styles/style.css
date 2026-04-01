@@ -41,6 +41,12 @@ svg {
   fill: currentColor;
 }
 
+.like-icon {
+  inline-size: 36px;
+  block-size: 36px;
+}
+
+
 .button {
   position: relative;
   overflow: hidden;
@@ -72,7 +78,10 @@ svg {
 
 .button:focus {
   outline: none;
-  box-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.button:focus-visible {
+  box-shadow: 2px 2px 0 var(--accent-color); 
 }
 
 .button:hover::before {
@@ -80,18 +89,17 @@ svg {
 }
 
 .card__icon-button {
+  margin-block: auto;
   padding: 0;
-  border: 1px solid red;
-  margin-inline-end: 4px;
+  block-size: 35px;
+  transition: outline 0.3s ease;
+  margin-inline-end: 5px;
 }
 
-.card__icon-button:focus {
+.card__icon-button:focus-visible {
   box-shadow: none;
+  outline: 2px solid var(--accent-color);
 }
-
-/* .card__icon-button:focus-visible {
-  
-} */
 
 .header {
   display: grid;
@@ -187,12 +195,9 @@ svg {
 .card__control {
   place-self: end;
   display: flex;
+  align-items: flex-end;
 }
 
-.like-icon {
-  inline-size: 38px;
-  block-size: 38px;
-}
 
 .card__like-button {
   padding-block: 0.7rem;
