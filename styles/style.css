@@ -318,8 +318,6 @@
 .like-icon {
   inline-size: 36px;
   block-size: 36px;
-  color: var(--accent-color);
-  fill: currentColor;
 }
 
 .main-body {
@@ -331,7 +329,7 @@
 }
 
 .contour {
-  color: var(--accent-color);
+  color: var(--contour-color);
 }
 
 .sparks {
