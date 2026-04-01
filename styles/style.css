@@ -36,25 +36,6 @@
   line-height: 1
 }
 
-svg {
-  color: var(--accent-color);
-  fill: currentColor;
-}
-
-.like-icon {
-  inline-size: 36px;
-  block-size: 36px;
-}
-
-.like-icon.main-body {
-  color: transparent;
-}
-
-.like-icon.core {
-  color: transparent;
-  mix-blend-mode: difference;
-}
-
 .button {
   position: relative;
   overflow: hidden;
@@ -263,6 +244,7 @@ svg {
   inline-size: 21px;
   block-size: 21px;
   color: var(--button-text-color);
+  fill: currentColor;
   margin-inline-end: 8px;
   mix-blend-mode: difference;
 }
@@ -333,3 +315,26 @@ svg {
   }
 }
 
+.like-icon {
+  inline-size: 36px;
+  block-size: 36px;
+  color: var(--accent-color);
+  fill: currentColor;
+}
+
+.main-body {
+  color: transparent;
+}
+
+.core {
+  color: transparent;
+}
+
+.contour {
+  color: var(--accent-color);
+}
+
+.sparks {
+  color: var(--sparks-color);
+  opacity: 0;
+}

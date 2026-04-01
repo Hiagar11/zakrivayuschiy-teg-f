@@ -8,6 +8,7 @@
                                  repeating-linear-gradient(to top, #e7e7e7, #1a1a1a);
     --color-white: #fff;
     --color-black: #000;
+    --color-red: #f00;
     --border-color: var(--color-black);
     --bg-color: var(--color-white);
     --stroke-color: var(--color-white);
@@ -15,4 +16,8 @@
     --accent-color: var(--color-black);
     --button-text-color: var(--color-white);
     --section-size: clamp(375px, calc(375px + (100vw - 375px) * 325 / 1065), 700px);
+    --main-body-color: var(--color-red);
+    --core-color: var(--color-white);
+    --contour-color: var(--color-black);
+    --sparks-color: var(--color-red);
 }
