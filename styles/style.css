@@ -259,7 +259,7 @@
   row-gap: 30px;
   margin: auto;
   inline-size: clamp(341px, 23vw, 353px);
-  transform: translate(-100%, -100%);
+  transform: translate(-50%, -50%);
 }
 
 .dialog[open] {
