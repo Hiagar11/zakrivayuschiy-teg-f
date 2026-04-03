@@ -106,6 +106,7 @@
 }
 
 .header__logo {
+  display: block;
   font-size: clamp(49px, calc(49px + (100vw - 375px) * 16 / 1065), 65px);
 }
 

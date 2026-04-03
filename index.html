@@ -16,11 +16,13 @@
   </head>
   <body class="page">
     <header class="header surface container">
-      <a href="#" class="header__link"><div class="header__logo accent-font">&lt;/html&gt;</div></a>
+      <a href="#" class="header__link"
+        ><span class="header__logo accent-font">&lt;/html&gt;</span></a
+      >
       <h1 class="header__title accent-font">закрывающий тег</h1>
     </header>
     <main>
-      <section class="container">
+      <section class="container" aria-label="Карточки курса">
         <ul class="container__list">
           <li>
             <article class="card surface">
@@ -580,7 +582,11 @@
           </li>
         </ul>
       </section>
-      <button class="button button-save surface" onclick="window['dialog'].showModal()">
+      <button
+        type="button"
+        class="button button-save surface"
+        onclick="window['dialog'].showModal()"
+      >
         <svg class="save-icon" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
           <use href="images/sprite.svg#icon-floppy"></use>
         </svg>
@@ -597,7 +603,11 @@
         <use href="images/sprite.svg#icon-floppy"></use>
       </svg>
       <span class="dialog__text accent-font">Вставьте дискету, чтобы продолжить</span>
-      <button onclick="window['dialog'].close()" class="dialog__button button accent-font">
+      <button
+        type="button"
+        onclick="window['dialog'].close()"
+        class="dialog__button button accent-font"
+      >
         <span class="button__text">ok</span>
       </button>
     </dialog>
