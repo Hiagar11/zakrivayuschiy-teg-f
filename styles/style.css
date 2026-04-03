@@ -32,7 +32,7 @@
 }
 
 .accent-font {
-  font-family: var(--accent-font), serif;
+  font-family: var(--accent-font), fantasy;
   line-height: 1;
 }
 
@@ -174,10 +174,10 @@
     -1px 1px 0 var(--stroke-color);
 }
 
-@supports not (-webkit-text-stroke: 1px (var(--stroke-color))) {
+@supports not (-webkit-text-stroke: 1px var(--stroke-color)) {
   .card__media-label {
     text-shadow: none;
-    -webkit-text-stroke: 1px (var(--stroke-color));
+    -webkit-text-stroke: 1px var(--stroke-color);
   }
 }
 
@@ -306,7 +306,7 @@
   place-self: start;
 }
 
-@media (width <=375px) {
+@media (width <= 375px) {
   .dialog {
     transform: translate(-50%, -60%);
   }
