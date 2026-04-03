@@ -255,13 +255,14 @@
 
 .dialog {
   position: fixed;
-  inset-block-start: 50%;
-  inset-inline-start: 50%;
   z-index: 3;
   row-gap: 30px;
   margin: 0;
   inline-size: clamp(341px, 23vw, 353px);
+  text-transform: uppercase;
   transform: translate(-50%, -50%);
+  inset-block-start: 50%;
+  inset-inline-start: 50%;
 }
 
 .dialog[open] {
@@ -300,6 +301,7 @@
   border: 2px solid var(--border-color);
   font-size: 14px;
   line-height: 90%;
+  text-transform: inherit;
   place-self: start;
 }
 
@@ -318,4 +320,3 @@
     margin-block-end: 8px;
   }
 }
-
