@@ -127,9 +127,11 @@
 }
 
 .card__title {
+  --weight-main-font: 715;
+
   padding-block: 4px;
   padding-inline: 10px;
-  font-variation-settings: 'wght' 715;
+  font-variation-settings: 'wght' var(--weight-main-font);
   place-self: stretch;
   border-block-end: 2px solid var(--border-color);
 }
