@@ -182,6 +182,7 @@
 }
 
 .card__body {
+  display: grid;
   padding: 24px 25px 25px;
   border-block-start: 2px solid var(--border-color);
 }
