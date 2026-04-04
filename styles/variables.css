@@ -3,6 +3,7 @@
     --main-font: 'Inter';
     --accent-font: 'Regular';
     --weight-main-font: 410;
+    --weight-main-font-bolder: 715;
     --background-gradient: repeating-linear-gradient(to top, #d3d3d3 0px 2px, transparent 2px 4px),
                              repeating-linear-gradient(to right, #d3d3d3 0px 2px, transparent 2px 4px),
                                  repeating-linear-gradient(to top, #e7e7e7, #1a1a1a);
